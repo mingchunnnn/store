@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>訂購網站</title>
+
+    <style>
+        .body{
+            margin: 10px;
+            background-color: rgb(67, 231, 231);
+        }
+        .table{
+            border: 2px solid black;
+            margin: 10px 25% ;
+            width:800px;
+            
+            
+        }
+        td,th,mix{
+            border: 1px solid gray;
+        }
+        .button{
+            margin: 10px 50%;
+            width: 80px;
+            background-color: rgb(250, 241, 229);
+            border-color: rgb(250, 241, 229);
+        
+        }
+        .button:hover{
+            cursor: pointer;
+        }
+        .greentea2,.coco2,.mix2,.tabs{
+            background-color:rgb(244, 215, 178);
+        }
+        .price{
+            background-color: antiquewhite;
+        }
+        
+    </style>
+</head>
+<body>
+   
+    <table class="table">
+        <tr class="tabs">
+            <th>口味</th>
+            <th>價格</th>
+            <th>數量</th>
+            
+            
+        </tr>
+        <tr id="greentea">
+            <td class="greentea2">綠茶</td>
+            <td class="price">$100</td>
+            <td class="price"><input type="number" value="0" min="0" max="4"></td>
+            
+        </tr>
+        <tr id="coco">
+            <td class="coco2">可可</td>
+            <td class="price">$100</td>
+            <td class="price"><input type="number" value="0" min="0" max="4"></td>
+            
+        </tr>
+        <tr id="mix">
+            <td class="mix2">綠茶＋可可</td>
+            <td class="price">$200</td>
+            <td class="price"><input type="number" value="0" min="0" max="4"></td>
+            
+        </tr>
+        
+    </table>
+    <form>
+
+    </form>
+    <input class="button" type="button" value="確認" onclick="alert('已送出訂單')">
+
+</body>
